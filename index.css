@@ -1,4 +1,37 @@
-h1 {
-    font-size: 72pt;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    display: grid;
+    grid-template-columns: 1fr minmax(320px, 2fr) 1fr;
+    background-color: #ffffff;
 }
+
+section {
+    grid-column-start: 2;
+    background-color: #eeeeee;
+    padding: 0 2em;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    flex: auto;
+    margin: 0;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    flex: auto;
+    margin-top: 0.5em;
+}
+
+header {
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    margin: 0.5em 0;
+}
+
