@@ -10,16 +10,18 @@ body {
     background-image: url("/images/Garden2.jpg");
     background-color:#999999;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #e0eae0;
     min-width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 0.9;
+    opacity: 0.8;
+    border-style: solid;
 }
 
 nav {
@@ -27,13 +29,14 @@ nav {
 }
 
 footer {
-    background-color: #ffffff;
+    background-color: #e0eae0;
     min-width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    opacity: 0.9;
+    opacity: 0.8;
+    padding: 0.5em 0;
 }
 
 hr {
@@ -43,7 +46,7 @@ hr {
 
 section {
     width: 50%;
-    background-color: #eeeeee;
+    background-color: #fff;
     flex: 1;
     opacity: 0.8;
 }
@@ -53,37 +56,37 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     flex: auto;
     margin: 0;
-    padding: 0 5%;
+    padding: 0 2.5%;
 }
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
     flex: auto;
     margin-top: 0.5em;
-    padding: 0 5%;
+    padding: 0 2.5%;
 }
 
 h3 {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0 5%;
+    padding: 0 2.5%;
 }
 
 h4 {
     margin: 0;
-    padding: 0 5%;
+    padding: 0 2.5%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h5 {
     margin: 0;
-    padding: 0 5%;
+    padding: 0 2.5%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
  p {
-    padding: 0 5%;
+    padding: 0 2.5%;
  }
 
  address {
-    padding: 0 5%;
+    padding: 0 2.5%;
  }
