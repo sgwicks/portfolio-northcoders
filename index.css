@@ -16,6 +16,7 @@ body {
 header {
     background-color: #e0eae0;
     min-width: 50%;
+    flex: 0 1 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,6 +32,7 @@ nav {
 footer {
     background-color: #e0eae0;
     min-width: 50%;
+    flex: 0 1 auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -39,16 +41,14 @@ footer {
     padding: 0.5em 0;
 }
 
-hr {
-    grid-column-start: 2;
-    width: 100%;
-}
-
-section {
-    width: 50%;
+article, main {
+    width: 45%;
+    padding: 0 2.5%;
+    flex: 1 1 auto;
     background-color: #fff;
-    flex: 1;
     opacity: 0.8;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 h1 {
@@ -56,37 +56,39 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     flex: auto;
     margin: 0;
-    padding: 0 2.5%;
 }
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
     flex: auto;
     margin-top: 0.5em;
-    padding: 0 2.5%;
 }
 
 h3 {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0 2.5%;
 }
 
 h4 {
     margin: 0;
-    padding: 0 2.5%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h5 {
     margin: 0;
-    padding: 0 2.5%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
- p {
-    padding: 0 2.5%;
+
+ .project {
+    flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: minmax(100px, auto) minmax(100px, auto);
+    grid-column-gap: 5%;
+    grid-row-gap: 1.5em;
+    grid-auto-rows: minmax(300px, auto);
  }
 
- address {
-    padding: 0 2.5%;
+ .project_preview {
+    background-color: #999999;
+    opacity: 1;
  }
