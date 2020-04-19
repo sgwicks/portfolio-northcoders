@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 599px) {
+  article,
+  main {
+    width: 94%;
+  }
+  .project-grid {
+    grid-template-columns: minmax(100px, 1fr);
+  }
+  .project-1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  .project-2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .project-3 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+  .project-4 {
+    grid-column-start: 1;
+    grid-row-start: 4;
   }
 }
 
-.App-header {
-  background-color: #282c34;
+@media screen and (min-width: 600px) {
+  article,
+  main {
+    width: 45%;
+  }
+  .project-grid {
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
+    grid-column-gap: 5%;
+  }
+  .project-1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  .project-2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  .project-3 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .project-4 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+}
+
+.App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url('./images/Garden2.jpg');
+  background-color: #999999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+header {
+  background-color: #e0eae0;
+  min-width: 50%;
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  opacity: 0.8;
+  border-style: solid;
 }
 
-.App-link {
-  color: #61dafb;
+nav {
+  margin: 0.5em 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  background-color: #e0eae0;
+  min-width: 50%;
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  opacity: 0.8;
+  padding: 0.5em 0;
+}
+
+article,
+main {
+  padding: 0 2.5%;
+  flex: 1 1 auto;
+  background-color: #fff;
+  opacity: 0.8;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: 'Times New Roman', Times, serif;
+  flex: auto;
+  margin: 0;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0.5em;
+}
+
+.header-text {
+  text-align: center;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h5 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.project-grid {
+  flex: 1 1 auto;
+  display: grid;
+  grid-row-gap: 1.5em;
+  grid-auto-rows: minmax(300px, auto);
+}
+
+.preview {
+  background-color: #999999;
+  opacity: 1;
+  padding: 2.5%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.project-box {
+  background-color: #ffffff;
+  border-style: solid;
+  flex: 1 1 auto;
+}
+
+a.box-link {
+  z-index: 2;
 }
