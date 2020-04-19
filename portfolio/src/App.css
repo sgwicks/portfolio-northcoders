@@ -63,6 +63,7 @@
 }
 
 .router {
+  width: 100%;
   flex: auto;
   display: flex;
   flex-direction: column;
