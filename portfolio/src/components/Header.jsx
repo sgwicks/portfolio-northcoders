@@ -1,16 +1,18 @@
 import React from 'react';
-import { Link } from '@reach/router';
+import { NavLink, HeaderStyle, Nav } from '../styles/HeaderStyles';
 
 const Header = () => {
   return (
-    <header>
+    <HeaderStyle>
       <h1 className='header-text'>SG Wicks</h1>
       <h2 className='header-text'>Developer, Writer, Student</h2>
-      <nav>
-        <Link to='/'>Home</Link> | <Link to='/portfolio'>Portfolio</Link> |{' '}
-        <Link to='/about'>About</Link> | <Link to='/contact'>Contact</Link>
-      </nav>
-    </header>
+      <Nav>
+        <NavLink to='/'>Home</NavLink> |{'  '}
+        <NavLink to='/portfolio'>Portfolio</NavLink> |{'  '}
+        <NavLink to='/about'>About</NavLink> |{'  '}
+        <NavLink to='/contact'>Contact</NavLink>
+      </Nav>
+    </HeaderStyle>
   );
 };
 
