@@ -8,7 +8,11 @@ export const NavLink = styled(Link)`
 `;
 
 export const HeaderStyle = styled.header`
-  background-color: rgb(102, 102, 51, 0.8);
+  @media only screen and (max-width: 599px) {
+    width: 95%;
+  }
+
+  background-color: rgb(110, 120, 53, 0.8);
   min-width: 70%;
   flex: 0 1 auto;
   display: flex;

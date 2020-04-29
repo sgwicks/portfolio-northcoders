@@ -13,6 +13,10 @@ export const MainArea = styled.main`
 `;
 
 export const MainText = styled.p`
+  @media only screen and (max-width: 599px) {
+    max-width: 90%;
+  }
+
   max-width: 55%;
   font-size: 16pt;
   line-height: 1.5;
