@@ -28,7 +28,7 @@ export const ProjectImg = styled.img`
 
 export const ProjectText = styled.p`
   position: absolute;
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255, 0.8);
   max-height: 100%;
   max-width: 100%;
   top: 0;
@@ -38,4 +38,24 @@ export const ProjectText = styled.p`
   border-radius: 5%;
   margin: 0;
   padding: 15%;
+`;
+
+export const ButtonDisplay = styled.section`
+  display: flex;
+`;
+
+export const ProjectButton = styled.button`
+  flex: auto;
+  font-size: 20px;
+  padding: 5px;
+  margin: 20px;
+  margin-bottom: 10px;
+  color: white;
+  // border: none;
+  ${(props) =>
+    props.active
+      ? 'background-color: rgb(115, 135, 53, 0.5)'
+      : 'background-color: rgb(115, 135, 53)'};
+  border-color: rgb(102, 102, 51);
+  border-radius: 10px;
 `;
