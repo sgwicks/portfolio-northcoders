@@ -1,4 +1,8 @@
 @media screen and (max-width: 599px) {
+  footer {
+    min-width: 92%;
+  }
+
   article,
   main {
     width: 90%;
@@ -9,6 +13,9 @@
   article,
   main {
     width: 60%;
+  }
+  footer {
+    min-width: 62%;
   }
 }
 
@@ -34,7 +41,7 @@
 
 footer {
   background-color: rgba(102, 102, 51, 0.9);
-  min-width: 62%;
+
   flex: 0 1 auto;
   display: flex;
   flex-direction: column;

@@ -9,11 +9,13 @@ export const NavLink = styled(Link)`
 
 export const HeaderStyle = styled.header`
   @media only screen and (max-width: 599px) {
-    width: 95%;
+    width: 98%;
   }
 
+  @media only screen and (min-width: 600px) {
+    min-width: 70%;
+  }
   background-color: rgb(110, 120, 53, 0.8);
-  min-width: 70%;
   flex: 0 1 auto;
   display: flex;
   flex-direction: column;
