@@ -5,11 +5,11 @@ const Contact = () => {
     <main>
       <section>
         <h2>Get in Touch</h2>
-        <p>
+        {/* <p>
           Once I learn more about website development, this page will contain a
           contact form for ease of use.
-        </p>
-        <p>For now, though you can get in touch the old-fashioned way:</p>
+        </p> */}
+        <p>For now, you can get in touch the old-fashioned way:</p>
         <h4>
           By Email:{' '}
           <a href='mailto:samgwicks@gmail.com?Subject=Hi%20Sam'>
