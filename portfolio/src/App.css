@@ -7,6 +7,17 @@
   main {
     width: 90%;
   }
+
+  .cv-portfolio {
+    display: flex;
+    flex-direction: column;
+  }
+  .ncn-label,
+  .git-label,
+  .nht-label {
+    background-color: rgba(102, 102, 51, 0.8);
+    color: white;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -16,6 +27,38 @@
   }
   footer {
     min-width: 62%;
+  }
+
+  .cv-portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'cvp-title cvp-title cvp-title'
+      'ncn-title none none'
+      'ncn-title none none'
+      'git-title none none'
+      'git-title none none'
+      'nht-title none none'
+      'nht-title none none';
+  }
+
+  .ncn-title {
+    grid-area: ncn-title;
+  }
+
+  .git-title {
+    grid-area: git-title;
+  }
+
+  .nht-title {
+    grid-area: nht-title;
+  }
+
+  .git-label,
+  .git-link {
+    background-color: rgba(102, 102, 51, 0.8);
+    color: white;
   }
 }
 
@@ -102,21 +145,41 @@ h5 {
 #cv {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #cv p {
   margin: 0;
+  padding: 5px;
+}
+#cv h3 {
+  background-color: rgba(102, 102, 51);
+  color: white;
+  margin: 0;
+  padding: 5px;
+}
+#cv h4 {
+  padding: 5px;
+}
+#cv > section {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
-.cv-portfolio {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    'cvp-title cvp-title cvp-title'
-    'ncn-title ncn-label ncn-link'
-    'git-title git-label git-link'
-    'nht-title nht-label nht-link';
+.cv-grey {
+  background-color: rgba(102, 102, 51, 0.8);
+  color: white;
+}
+
+.cv-intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cv-intro p {
+  width: 90%;
+  align-self: center;
 }
 
 .cvp-title {
@@ -126,22 +189,23 @@ h5 {
 .ncn-title,
 .git-title,
 .nht-title {
-  background-color: brown;
-}
-
-.ncn-label {
-  grid-area: ncn-label;
-}
-
-.ncn-link {
-  grid-area: ncn-link;
+  background-color: rgba(102, 102, 51);
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
 ul.cv-skills {
   list-style-type: none;
   padding: 0;
+  margin: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+ul.cv-skills li {
+  text-align: center;
+  padding: 5px;
 }
 
 .exp-job {
@@ -159,4 +223,9 @@ ul.cv-skills {
   padding: 0;
   display: grid;
   grid-template-columns: auto 1fr;
+  margin: 0;
+}
+
+.edu-alevel li {
+  padding: 0 5px;
 }
