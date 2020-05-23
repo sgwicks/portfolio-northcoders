@@ -60,6 +60,9 @@
     background-color: rgba(102, 102, 51, 0.8);
     color: white;
   }
+  .git-link a {
+    color: white;
+  }
 }
 
 .App {
@@ -69,6 +72,10 @@
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
+  color: rgb(102, 102, 51);
+}
+
+a {
   color: rgb(102, 102, 51);
 }
 

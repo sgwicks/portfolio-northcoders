@@ -21,19 +21,43 @@ const CV = () => {
         <h3 className='cvp-title'>Project Portfolio</h3>
         <p className='ncn-title'>Northcoders News</p>
         <p className='ncn-label'>API</p>
-        <p className='ncn-link'>https://nc-news-now.herokuapp.com/api</p>
+        <p className='ncn-link'>
+          <a href='https://nc-news-now.herokuapp.com/api'>
+            https://nc-news-now.herokuapp.com/api
+          </a>
+        </p>
         <p className='ncn-label'>Website</p>
-        <p className='ncn-link'>https://sg-news.netlify.app/</p>
+        <p className='ncn-link'>
+          <a href='https://sg-news.netlify.app/'>
+            https://sg-news.netlify.app/
+          </a>
+        </p>
         <p className='git-title'>Github Projects</p>
         <p className='git-label'>NC News API:</p>
-        <p className='git-link'>https://github.com/sgwicks/nc-news</p>
+        <p className='git-link'>
+          <a href='https://github.com/sgwicks/nc-news'>
+            https://github.com/sgwicks/nc-news
+          </a>
+        </p>
         <p className='git-label'>NC News Website:</p>
-        <p className='git-link'>https://github.com/sgwicks/nc-news-site</p>
+        <p className='git-link'>
+          <a href='https://github.com/sgwicks/nc-news-site'>
+            https://github.com/sgwicks/nc-news-site
+          </a>
+        </p>
         <p className='nht-title'>Neighbourhoot</p>
         <p className='nht-label'>Github Repo:</p>
-        <p className='nht-link'>https://github.com/sgwicks/neighbourhoot</p>
+        <p className='nht-link'>
+          <a href='https://github.com/sgwicks/neighbourhoot'>
+            https://github.com/sgwicks/neighbourhoot
+          </a>
+        </p>
         <p className='nht-label'>Presentation:</p>
-        <p className='nht-link'>https://www.youtube.com/watch?v=XOdEsIR F3VE</p>
+        <p className='nht-link'>
+          <a href='https://www.youtube.com/watch?v=XOdEsIR F3VE'>
+            https://www.youtube.com/watch?v=XOdEsIR F3VE
+          </a>
+        </p>
       </section>
       <section className='cv-tech-skills'>
         <h3>Technical Skills</h3>
