@@ -7,6 +7,7 @@ import { Router } from '@reach/router';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import CV from './components/CV';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Router className='router'>
         <Home path='/' />
+        <CV path='/cv' />
         <About path='/about' />
         <Portfolio path='/portfolio' />
         <Contact path='/contact' />

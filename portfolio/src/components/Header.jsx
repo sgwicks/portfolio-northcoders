@@ -8,6 +8,7 @@ const Header = () => {
       <h2 className='header-text'>Developer, Writer, Student</h2>
       <Nav>
         <NavLink to='/'>Home</NavLink> |{'  '}
+        <NavLink to='/cv'>CV</NavLink> |{'  '}
         <NavLink to='/portfolio'>Portfolio</NavLink> |{'  '}
         <NavLink to='/about'>About</NavLink> |{'  '}
         <NavLink to='/contact'>Contact</NavLink>
