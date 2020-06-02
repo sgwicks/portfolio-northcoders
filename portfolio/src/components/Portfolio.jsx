@@ -70,6 +70,14 @@ const Portfolio = () => {
         'A personal, ongoing project. Gatherers is a game in which players must grab apples to grow their tribe against a slow but inevitable starvation counter'
     },
     {
+      url: 'https://github.com/sgwicks/crusades',
+      name: 'Crusades',
+      img: '/images/Castle.png',
+      imgAlt: 'Crusades Castle',
+      blurb:
+        'An event-based game about a monarch attempting to guide their country through all sorts of troubles while raising money and troops for a crusade.'
+    },
+    {
       url: 'https://github.com/sgwicks',
       name: 'Github',
       img: '/images/GitHub.png',
