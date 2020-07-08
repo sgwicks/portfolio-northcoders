@@ -1,7 +1,7 @@
 import React from 'react';
 import { MainText, MainArea } from '../styles/MainStyles';
 
-const Home = () => {
+const About = () => {
   return (
     <MainArea>
       <h2>About Me</h2>
@@ -32,4 +32,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default About;

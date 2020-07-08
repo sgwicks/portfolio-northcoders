@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-import Home from './components/Home';
+import About from './components/About';
 import Footer from './components/Footer';
 import { Router } from '@reach/router';
 import Portfolio from './components/Portfolio';
@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Router className='router'>
         <Portfolio path='/' />
-        <Home path='/about' />
+        <About path='/about' />
         <CV path='/cv' />
         <Contact path='/contact' />
       </Router>
