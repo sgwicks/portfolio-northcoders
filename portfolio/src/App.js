@@ -14,10 +14,10 @@ function App() {
     <div className='App'>
       <Header />
       <Router className='router'>
-        <Home path='/' />
+        <Portfolio path='/' />
+        <Home path='/about' />
         <CV path='/cv' />
-        <About path='/about' />
-        <Portfolio path='/portfolio' />
+        {/* <About path='/about' /> */}
         <Contact path='/contact' />
       </Router>
       <Footer />
