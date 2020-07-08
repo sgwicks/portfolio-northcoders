@@ -92,7 +92,7 @@ const Portfolio = () => {
 
   return (
     <main>
-      <ButtonDisplay>
+      {/* <ButtonDisplay>
         <ProjectButton
           active={active === 'coding'}
           onClick={() => {
@@ -109,7 +109,7 @@ const Portfolio = () => {
           }}>
           Writing
         </ProjectButton>
-      </ButtonDisplay>
+      </ButtonDisplay> */}
       <ProjectGrid>
         {portfolio.map((project) => (
           <Project {...project} />
