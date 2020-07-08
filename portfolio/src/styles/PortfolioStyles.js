@@ -39,3 +39,4 @@ export const ProjectText = styled.p`
   margin: 0;
   padding: 15%;
 `;
+
