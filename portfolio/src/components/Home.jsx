@@ -4,7 +4,7 @@ import { MainText, MainArea } from '../styles/MainStyles';
 const Home = () => {
   return (
     <MainArea>
-      <h2>Welcome</h2>
+      <h2>About Me</h2>
       <MainText>
         This site is a work in progress at the moment, and philosophically
         speaking, it always will be. Keep an eye on it, though, and from the
