@@ -25,7 +25,7 @@ const Portfolio = () => {
         'An API for a reddit-style news/social media site where users can post articles and comments, and vote on posted articles and comments. Built using Express.js with Mocha and Supertest for testing.'
     },
     {
-      url: 'https://github.com/sgwicks/gatherers',
+      url: 'https://gatherers.netlify.app/',
       name: 'gatherers',
       title: 'Gatherers',
       img: '/images/Tent.jpg',
